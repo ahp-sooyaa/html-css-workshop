@@ -1,0 +1,294 @@
+<!doctype html>
+
+<title>Html & css workshop</title>
+
+<link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+<link rel="shortcut icon" href="images/lary-avatar.svg">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+
+<body style="font-family: Open Sans, sans-serif;">
+    <section class="px-6 py-4">
+        <nav class="flex flex-col lg:flex-row justify-between items-center">
+            <a href="/">
+                <img src="images/logo.svg" alt="Laracasts logo" width="165" height="16">
+            </a>
+
+            <div class="mt-8 lg:mt-0">
+                <a href="/" class="text-xs font-bold uppercase">Home page</a>
+                <a href="#" class="inline-block bg-blue-500 px-5 py-3 rounded-full ml-3 font-semibold text-xs text-white uppercase">
+                    Subscribe for updates
+                </a>
+            </div>
+        </nav>
+
+        <header class="max-w-2xl mt-16 lg:mt-24 mx-auto">
+            <h1 class="text-4xl text-center">Latest <span class="text-blue-500">Laravel From Scratch</span> News</h1>
+            <h2 class="flex justify-center mt-2">By Lary Laracore <img src="images/lary-head.svg" alt="Lara's head" class="ml-2"></h2>
+
+            <p class="text-center mt-16 text-gray-700">
+                Another year another update we are refreshing laracasts series with new content. <br>
+                I'm going to keep you guys up to speed with whats going on.
+            </p>
+
+            <div class="flex justify-between mt-3">
+                <!-- category -->
+                <div class="relative mr-3">
+                    <select name="category" class="shadow-sm font-semibold focus:outline-none appearance-none bg-gray-100 rounded-xl pl-4 pr-11 py-2">
+                        <option disabled selected>Category</option>
+                        <option value="2">category 2</option>
+                        <option value="3">category 3</option>
+                    </select>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="absolute h-5 mr-1 pointer-events-none right-1.5 top-2.5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                    </svg>
+                </div>
+
+                <!-- filters -->
+                <div class="relative mr-3">
+                    <select name="filter" class="shadow-sm font-semibold focus:outline-none appearance-none bg-gray-100 rounded-xl pl-4 pr-11 py-2">
+                        <option disabled selected>Filters</option>
+                        <option value="2">filter 2</option>
+                        <option value="3">filter 3</option>
+                    </select>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="absolute h-5 mr-1 pointer-events-none right-1.5 top-2.5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                    </svg>
+                </div>
+
+                <!-- search -->
+                <div class="relative flex-grow">
+                    <input type="text" placeholder="find something?" class="shadow-sm w-full appearance-none bg-gray-100 rounded-xl focus:outline-none pl-11 py-2 placeholder-black font-semibold">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="absolute h-6 left-3 top-2 w-6" >
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                    </svg>
+                </div>
+            </div>
+        </header>
+
+        <main class="max-w-7xl mt-16 mx-auto space-y-5">
+            <div class="lg:flex border border-black border-opacity-0 hover:bg-gray-100 hover:border-opacity-10 p-5 rounded-xl">
+                <div class="lg:mr-8 lg:w-1/2">
+                    <img src="images/illustration-1.png" alt="illustration1 image" class="rounded-2xl">
+                </div>
+                <div class="flex flex-col justify-between lg:w-1/2 mt-5 lg:mt-0">
+                    <div>
+                        <div class="flex">
+                            <div class="text-xs mr-3 border-2 border-blue-500 px-4 py-1 rounded-full text-blue-500 uppercase">Techniques</div>
+                            <div class="text-xs border-2 border-green-500 px-4 py-1 rounded-full text-green-500 uppercase">Techniques</div>
+                        </div>
+                        <h1 class="text-4xl mt-3">
+                            <a href="/post.html">
+                                This is a big title it will look great on two or three lines. <br> Woohoo!
+                            </a>
+                        </h1>
+                        <h3 class="mt-2 text-gray-400 text-sm">Published November 17, 2021</h3>
+                        <p class="mt-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus animi, assumenda consequatur corporis delectus eveniet fugit laborum, maiores nam nostrum obcaecati perspiciatis.</p>
+                        <p class="mt-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, blanditiis dolores facere fugiat nisi obcaecati quo vero.</p>
+                    </div>
+
+                    <div class="mt-9">
+                        <div class="flex justify-between items-center w-full">
+                            <div class="flex items-center">
+                                <img src="images/lary-avatar.svg" alt="Lara's avatar" class="mr-3">
+                                <div>
+                                    <h3 class="font-semibold">Lary Laracore</h3>
+                                    <p>Does it All'er @Laracasts</p>
+                                </div>
+                            </div>
+                            <div class="bg-gray-200 px-6 py-2 rounded-full min-w-max">
+                                Read All about it
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="lg:grid lg:grid-cols-2">
+                <div class="border border-black border-opacity-0 hover:bg-gray-100 hover:border-opacity-10 p-5 rounded-xl">
+                    <img src="images/illustration-2.png" alt="illustration1 image" class="rounded-2xl">
+
+                    <div class="flex flex-col justify-between">
+                        <div class="mt-4">
+                            <div class="flex">
+                                <div class="text-xs mr-3 border-2 border-blue-500 px-4 py-1 rounded-full text-blue-500 uppercase">Techniques</div>
+                                <div class="text-xs border-2 border-green-500 px-4 py-1 rounded-full text-green-500 uppercase">Techniques</div>
+                            </div>
+                            <h1 class="text-4xl mt-3">This is a big title it will look great on two or three lines. <br> Woohoo!</h1>
+                            <h3 class="mt-2 text-gray-400 text-sm">Published November 17, 2021</h3>
+                            <p class="mt-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus animi, assumenda consequatur corporis delectus eveniet fugit laborum, maiores nam nostrum obcaecati perspiciatis.</p>
+                            <p class="mt-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, blanditiis dolores facere fugiat nisi obcaecati quo vero.</p>
+                        </div>
+
+                        <div class="mt-9">
+                            <div class="flex justify-between items-center w-full">
+                                <div class="flex items-center">
+                                    <img src="images/lary-avatar.svg" alt="Lara's avatar" class="mr-3">
+                                    <div>
+                                        <h3 class="font-semibold">Lary Laracore</h3>
+                                        <p>Does it All'er @Laracasts</p>
+                                    </div>
+                                </div>
+                                <div class="bg-gray-200 px-6 py-2 rounded-full min-w-max">
+                                    Read All about it
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="border border-black border-opacity-0 hover:bg-gray-100 hover:border-opacity-10 p-5 rounded-xl">
+                    <img src="images/illustration-3.png" alt="illustration1 image" class="rounded-2xl">
+
+                    <div class="flex flex-col justify-between">
+                        <div class="mt-4">
+                            <div class="flex">
+                                <div class="text-xs mr-3 border-2 border-blue-500 px-4 py-1 rounded-full text-blue-500 uppercase">Techniques</div>
+                                <div class="text-xs border-2 border-green-500 px-4 py-1 rounded-full text-green-500 uppercase">Techniques</div>
+                            </div>
+                            <h1 class="text-4xl mt-3">This is a big title it will look great on two or three lines. <br> Woohoo!</h1>
+                            <h3 class="mt-2 text-gray-400 text-sm">Published November 17, 2021</h3>
+                            <p class="mt-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus animi, assumenda consequatur corporis delectus eveniet fugit laborum, maiores nam nostrum obcaecati perspiciatis.</p>
+                            <p class="mt-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, blanditiis dolores facere fugiat nisi obcaecati quo vero.</p>
+                        </div>
+
+                        <div class="mt-9">
+                            <div class="flex justify-between items-center w-full">
+                                <div class="flex items-center">
+                                    <img src="images/lary-avatar.svg" alt="Lara's avatar" class="mr-3">
+                                    <div>
+                                        <h3 class="font-semibold">Lary Laracore</h3>
+                                        <p>Does it All'er @Laracasts</p>
+                                    </div>
+                                </div>
+                                <div class="bg-gray-200 px-6 py-2 rounded-full min-w-max">
+                                    Read All about it
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="lg:grid lg:grid-cols-3">
+                <div class="border border-black border-opacity-0 hover:bg-gray-100 hover:border-opacity-10 p-5 rounded-xl">
+                    <img src="images/illustration-4.png" alt="illustration1 image" class="rounded-2xl">
+
+                    <div class="flex flex-col justify-between">
+                        <div class="mt-4">
+                            <div class="flex">
+                                <div class="text-xs mr-3 border-2 border-blue-500 px-4 py-1 rounded-full text-blue-500 uppercase">Techniques</div>
+                                <div class="text-xs border-2 border-green-500 px-4 py-1 rounded-full text-green-500 uppercase">Techniques</div>
+                            </div>
+                            <h1 class="text-4xl mt-3">This is a big title it will look great on two or three lines. <br> Woohoo!</h1>
+                            <h3 class="mt-2 text-gray-400 text-sm">Published November 17, 2021</h3>
+                            <p class="mt-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus animi, assumenda consequatur corporis delectus eveniet fugit laborum, maiores nam nostrum obcaecati perspiciatis.</p>
+                            <p class="mt-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, blanditiis dolores facere fugiat nisi obcaecati quo vero.</p>
+                        </div>
+
+                        <div class="mt-9">
+                            <div class="flex justify-between items-center w-full">
+                                <div class="flex items-center">
+                                    <img src="images/lary-avatar.svg" alt="Lara's avatar" class="mr-3">
+                                    <div>
+                                        <h3 class="font-semibold">Lary Laracore</h3>
+                                        <p>Does it All'er @Laracasts</p>
+                                    </div>
+                                </div>
+                                <div class="bg-gray-200 px-6 py-2 rounded-full min-w-max">
+                                    Read All about it
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="border border-black border-opacity-0 hover:bg-gray-100 hover:border-opacity-10 p-5 rounded-xl">
+                    <img src="images/illustration-5.png" alt="illustration1 image" class="rounded-2xl">
+
+                    <div class="flex flex-col justify-between">
+                        <div class="mt-4">
+                            <div class="flex">
+                                <div class="text-xs mr-3 border-2 border-blue-500 px-4 py-1 rounded-full text-blue-500 uppercase">Techniques</div>
+                                <div class="text-xs border-2 border-green-500 px-4 py-1 rounded-full text-green-500 uppercase">Techniques</div>
+                            </div>
+                            <h1 class="text-4xl mt-3">This is a big title it will look great on two or three lines. <br> Woohoo!</h1>
+                            <h3 class="mt-2 text-gray-400 text-sm">Published November 17, 2021</h3>
+                            <p class="mt-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus animi, assumenda consequatur corporis delectus eveniet fugit laborum, maiores nam nostrum obcaecati perspiciatis.</p>
+                            <p class="mt-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, blanditiis dolores facere fugiat nisi obcaecati quo vero.</p>
+                        </div>
+
+                        <div class="mt-9">
+                            <div class="flex justify-between items-center w-full">
+                                <div class="flex items-center">
+                                    <img src="images/lary-avatar.svg" alt="Lara's avatar" class="mr-3">
+                                    <div>
+                                        <h3 class="font-semibold">Lary Laracore</h3>
+                                        <p>Does it All'er @Laracasts</p>
+                                    </div>
+                                </div>
+                                <div class="bg-gray-200 px-6 py-2 rounded-full min-w-max">
+                                    Read All about it
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="border border-black border-opacity-0 hover:bg-gray-100 hover:border-opacity-10 p-5 rounded-xl">
+                    <img src="images/illustration-1.png" alt="illustration1 image" class="rounded-2xl">
+
+                    <div class="flex flex-col justify-between">
+                        <div class="mt-4">
+                            <div class="flex">
+                                <div class="text-xs mr-3 border-2 border-blue-500 px-4 py-1 rounded-full text-blue-500 uppercase">Techniques</div>
+                                <div class="text-xs border-2 border-green-500 px-4 py-1 rounded-full text-green-500 uppercase">Techniques</div>
+                            </div>
+                            <h1 class="text-4xl mt-3">This is a big title it will look great on two or three lines. <br> Woohoo!</h1>
+                            <h3 class="mt-2 text-gray-400 text-sm">Published November 17, 2021</h3>
+                            <p class="mt-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus animi, assumenda consequatur corporis delectus eveniet fugit laborum, maiores nam nostrum obcaecati perspiciatis.</p>
+                            <p class="mt-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, blanditiis dolores facere fugiat nisi obcaecati quo vero.</p>
+                        </div>
+
+                        <div class="mt-9">
+                            <div class="flex justify-between items-center w-full">
+                                <div class="flex items-center">
+                                    <img src="images/lary-avatar.svg" alt="Lara's avatar" class="mr-3">
+                                    <div>
+                                        <h3 class="font-semibold">Lary Laracore</h3>
+                                        <p>Does it All'er @Laracasts</p>
+                                    </div>
+                                </div>
+                                <div class="bg-gray-200 px-6 py-2 rounded-full min-w-max">
+                                    Read All about it
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="my-10">
+            <div class="rounded-xl shadow bg-gray-100 px-5 py-14 text-center">
+                <img src="images/lary-newsletter-icon.svg" alt="Lara newsletter" width="200" class="mx-auto -mb-6">
+                <h1 class="text-3xl">Stay in touch with the latest posts</h1>
+                <p class="text-lg">Promise to keep inbox clean. No bugs.</p>
+
+                <!-- newsletter input-->
+                <div class="inline-block mt-10">
+                    <div class="bg-gray-200 pl-5 rounded-full">
+                        <form action="#" method="post" class="flex items-center">
+                            <label for="email" class="inline-block">
+                                <img src="images/mailbox-icon.svg" alt="mailbox icon">
+                            </label>
+                            <input id="email" type="text" placeholder="Your email address" class="bg-transparent ml-2 focus:outline-none">
+                            <button type="submit" class="hover:bg-blue-600 bg-blue-500 font-semibold ml-3 px-8 py-3 rounded-full text-white text-xs uppercase">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </section>
+</body>

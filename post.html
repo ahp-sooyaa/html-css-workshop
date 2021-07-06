@@ -1,0 +1,145 @@
+<!doctype html>
+
+<title>Html & css workshop</title>
+
+<link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+<link rel="shortcut icon" href="images/lary-avatar.svg">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+
+<body style="font-family: Open Sans, sans-serif;">
+<section class="px-6 py-4">
+    <nav class="flex flex-col lg:flex-row justify-between items-center">
+        <a href="/">
+            <img src="images/logo.svg" alt="Laracasts logo" width="165" height="16">
+        </a>
+
+        <div class="mt-8 lg:mt-0">
+            <a href="/" class="text-xs font-bold uppercase">Home page</a>
+            <a href="#" class="inline-block bg-blue-500 px-5 py-3 rounded-full ml-3 font-semibold text-xs text-white uppercase">
+                Subscribe for updates
+            </a>
+        </div>
+    </nav>
+
+    <main class="max-w-6xl mt-0 lg:mt-16 mx-auto py-10">
+        <div class="gap-x-24 lg:grid lg:grid-cols-12 lg:px-0 max-w-6xl mx-auto px-10">
+            <div class="col-span-3">
+                <div class="lg:w-72 w-full">
+                    <img src="images/illustration-1.png" alt="illustration 1 image" class="rounded-2xl">
+
+                    <div class="flex lg:flex-col-reverse items-center justify-between mb-20 mt-4 lg:mt-0">
+                        <p class="text-gray-400 text-sm text-right lg:text-center lg:mt-3 mt-0 order-last">Published November 17, 2021</p>
+                        <div class="flex justify-center items-center lg:mt-3 mt-0">
+                            <img src="images/lary-avatar.svg" alt="Lara's avatar" class="mr-3">
+                            <div class="text-sm">
+                                <h3 class="font-semibold">Lary Laracore</h3>
+                                <p>Does it All'er @Laracasts</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-span-8 -mt-10">
+                <div class="flex justify-between">
+                    <a href="index.html" class="cursor-pointer duration-300 flex hover:text-blue-500 items-center transition-colors">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="transform rotate-90 h-5 w-5 mr-1 pointer-events-none">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M19 9l-7 7-7-7" />
+                        </svg>
+                        Back to posts
+                    </a>
+                    <div class="flex">
+                        <a href="#" class="text-xs mr-3 border-2 border-blue-500 px-4 py-1 rounded-full text-blue-500 uppercase">
+                            Techniques
+                        </a>
+                        <a href="#" class="text-xs border-2 border-green-500 px-4 py-1 rounded-full text-green-500 uppercase">
+                            Laravel
+                        </a>
+                    </div>
+                </div>
+                <h1 class="text-4xl mt-3">
+                    <a href="/post.html">
+                        This is a big title it will look great on two or three lines. Woohoo!
+                    </a>
+                </h1>
+
+                <div class="space-y-4 mt-4 leading-loose">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                        pariatur.</p>
+
+                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                        laudantium,
+                        totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae
+                        vitae
+                        dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut
+                        fugit.</p>
+
+                    <h2 class="font-bold text-lg">Sed quia consequuntur</h2>
+
+                    <p>Magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui
+                        dolorem
+                        ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi
+                        tempora
+                        incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+
+                    <p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam,
+                        nisi ut
+                        aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate
+                        velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas
+                        nulla
+                        pariatur?"</p>
+
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                        pariatur.</p>
+
+                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                        laudantium,
+                        totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae
+                        vitae
+                        dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut
+                        fugit.</p>
+                </div>
+
+                <a href="index.html" class="cursor-pointer duration-300 flex hover:text-blue-500 font-bold items-center transition-colors mt-5">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="transform rotate-90 h-5 w-5 mr-1 pointer-events-none">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M19 9l-7 7-7-7" />
+                    </svg>
+                    Back to posts
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <footer class="my-10">
+        <div class="rounded-xl shadow bg-gray-100 px-5 py-14 text-center">
+            <img src="images/lary-newsletter-icon.svg" alt="Lara newsletter" width="200" class="mx-auto -mb-6">
+            <h1 class="text-3xl">Stay in touch with the latest posts</h1>
+            <p class="text-lg">Promise to keep inbox clean. No bugs.</p>
+
+            <!-- newsletter input-->
+            <div class="inline-block mt-10">
+                <div class="bg-gray-200 pl-5 rounded-full">
+                    <form action="#" method="post" class="flex items-center">
+                        <label for="email" class="inline-block">
+                            <img src="images/mailbox-icon.svg" alt="mailbox icon">
+                        </label>
+                        <input id="email" type="text" placeholder="Your email address" class="bg-transparent ml-2 focus:outline-none">
+                        <button type="submit" class="hover:bg-blue-600 bg-blue-500 font-semibold ml-3 px-8 py-3 rounded-full text-white text-xs uppercase">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
+</section>
+</body>
